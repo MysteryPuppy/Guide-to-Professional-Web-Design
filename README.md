@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://vuepress.vuejs.org/hero.png
+heroImage: book.png
 actionText: Get Started →
 actionLink: /guide/
 features:
