@@ -1,22 +1,23 @@
 {
-  "name": "Guide-to-Professional-Web-Design",
-  "version": "1.0.0",
-  "description": "--- home: true heroImage: https://vuepress.vuejs.org/hero.png actionText: Get Started → actionLink: /guide/ features: - title: Before You Code   details: Learn how to use GitHub, GitBucket & and how to commit correctly - title: Styling Conventions & Coding   details: Learn how to make your code clean, easy to maintain, and fun for users to use - title: The Entire Process   details: Learn how to go from a design to a website and what steps to take footer: MIT Licensed | Copyright © 2018-present Evan You ---",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "name": "Website",
+  "description": "Documentation",
+  "version": "5.3.5",
+  "license": "Apache-2.0",
+  "url": "https://github.com/bencodezen/bencodezen",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vuepress dev",
+    "build": "vuepress build"
   },
+  "author": "Ben Hong <bencodezen@gmail.com> & Mel",
+  "dependencies": {},
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MysteryPuppy/Guide-to-Professional-Web-Design.git"
+    "url": "git+https://github.com/lovebirdsnest/website"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MysteryPuppy/Guide-to-Professional-Web-Design/issues"
+    "url": "https://github.com/lovebirdsnest/website/issues"
   },
-  "homepage": "https://github.com/MysteryPuppy/Guide-to-Professional-Web-Design#readme"
+  "homepage": "https://github.com/lovebirdsnest/website#readme"
 }
