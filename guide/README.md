@@ -8,6 +8,6 @@ Before starting the tutorial, I wanted to talk a bit about my background so you 
 
 ## Assumptions
 
-This guide assumes basic knowledge of HTML and CSS. You don't need to be a master but it's good if you understand how to make a basic website already. If you already know how to use GitHub, BitBucket, etc. then skip to the 'Styling Conventions & Coding' section. 
+This guide assumes basic knowledge of HTML and CSS. You don't need to be a master but it's good if you understand how to make a basic website already. If you already know how to use GitHub, BitBucket, etc. then skip to the [Styling Conventions & Coding]() section.
 
  That being said, let's get started!

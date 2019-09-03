@@ -7,6 +7,7 @@ module.exports = {
           { text: 'Guide', link: '/guide/' },
         ],
         //sidebar: 'auto'
+        sidebarDepth: 2,
         sidebar: {
             '/guide/': [
                 '',
