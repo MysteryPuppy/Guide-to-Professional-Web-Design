@@ -18,11 +18,11 @@ If you don't have one already, make a GitHub account over at [https://github.com
 ### Creating a Repository
 Simply click on the '+' sign at the top of GitHub and click on the 'New Repository' option.
 
-<img src="/1.png" width=50% height=50%>
+<img src="/1.png" width=50% height=50% alt="Clicking on New Repository option">
 
 A new page will open where you can enter details about your new project. Copy my values below or put your own twist on things!
 
-<img src="/2.png">
+<img src="/2.png" alt="Repository details entered. Name is TestRepo and the description doesn't matter for now. The add README option is selected.">
 
 "Initialize this repository with a README" just means that GitHub will put a Markdown file called README.md in your repository on creation. This file usually contains information about what the repository contains. If you're interested in learning more about how to create a README.md file, hop down to the [Markdown](Before%20You%20Code.html#markdown) section for a few minutes to learn about that.
 
@@ -65,7 +65,7 @@ Headers are essentially titles and they can have varying font sizes.. The bigges
 
 This is what that file would look like rendered (using the Typora desktop application):
 
-<img src="/3.png">
+<img src="/3.png" alt="Rendered markdown. The titles are all bold and as the number rises the font gets smaller.">
 
 That's headers! To write normal text you don't need to put anything special, just begin it on a new line.
 
@@ -87,18 +87,54 @@ To make a list in Markdown simply start a line with `* ` to make an unordered li
 ```
 How the file would look rendered:
 
-<img src="/4.png">
+<img src="/4.png" alt="Rendered Markdown file where there is an unordered list and an ordered list. The ordered list also has a nested unordered list in it.">
 
 ### Text Styling
 
+Text styling is easy! To make something italic, put asterisk characters `*` around it like this `*This is italic*`. To make something bold, put two asterisk characters `**` around it like this `**This is bold**`. To strikethrough text, put two tilde characters `~~` around it like this `~~This is strikedthrough~~`.
+
+The code:
+```markdown
+*This is italic*
+**This is bold**
+***This is italic bold***
+~~This is strikedthrough~~
+```
+
+The rendered result:
+
+<img src="/5.png" alt="Rendered Markdown file where there is italic, bold, italic bold, and strikethrough text seen without the stars and tildes around it in the rendered version.">
+
+
 ### Links
+To add a link to a file simply put brackets `[]` around the word you want to be the link and then after the brackets put the link in parentheses `()`. For example, if I wanted to make a link to google I could write `This is a link to [Google](https://www.google.com )`. You can also link to internal headers, which act as anchors in the page. For instance, if we had a header `# Cats` we could link to it like so `Here is a link to [cats are great](#Cats)`.
 
 ### Code Blocks
-Inline code highlighting is done with backticks ` `` ` around the code like ``` `this` ```. If you have a block of code then put three backticks before and after the block of code. Markdown also supports code highlighting.
+Inline code highlighting is done with backticks ` `` ` around the code like ``` `this` ```. If you have a block of code then put three backticks before and after the block of code. Markdown also supports code highlighting. For example:
+
+```python
+print("This is some Python code")
+if(2==2):
+  print("This will always print")
+```
+
+```Java
+System.out.println("This is Java Code");
+```
+
+```Markdown
+This is **Markdown!** Wow it looks *cool*
+```
+The code:
+
+<img src="/6.png" alt="Unrendered Markdown file that shows how to get different syntax highlighting to work. After the first three backticks, write a programming language name like python or Markdown to get the correct syntax highlighting.">
+
 
 
 ### More
 There's so much more that Markdown can do but this is a solid foundation. To learn about all the wonders of Markdown, visit the [Markdown wiki](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to get a more complete list of what Markdown can do to help you creaate stunning and neat looking websites and files!
 
+You've learned a lot already though, maybe consider a coffee break? :coffee:
+
 ## Extra Handy Tools
-* [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It's what I use for most of the application screenshots in this guide.
+* :camera: [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It's what I use for most of the application screenshots in this guide.
