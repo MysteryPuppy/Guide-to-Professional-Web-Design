@@ -63,9 +63,9 @@ Headers are essentially titles and they can have varying font sizes.. The bigges
 ###### So tiny!
 ```
 
-This is what that file would look like rendered:
+This is what that file would look like rendered (using the Typora desktop application):
 
-<img src="/3.png" width=80% height=80%>
+<img src="/3.png">
 
 That's headers! To write normal text you don't need to put anything special, just begin it on a new line.
 
@@ -87,7 +87,7 @@ To make a list in Markdown simply start a line with `* ` to make an unordered li
 ```
 How the file would look rendered:
 
-<img src="/4.png" width=80% height=80%>
+<img src="/4.png">
 
 ### Text Styling
 
@@ -101,4 +101,4 @@ Inline code highlighting is done with backticks ` `` ` around the code like ``` 
 There's so much more that Markdown can do but this is a solid foundation. To learn about all the wonders of Markdown, visit the [Markdown wiki](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to get a more complete list of what Markdown can do to help you creaate stunning and neat looking websites and files!
 
 ## Extra Handy Tools
-* [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It's what I use for most of the application screenshots in this guide. 
+* [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It's what I use for most of the application screenshots in this guide.
