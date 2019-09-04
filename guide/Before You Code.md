@@ -84,8 +84,6 @@ To make a list in Markdown simply start a line with `* ` to make an unordered li
 1. This is an
 2. Ordered list
     * This is a nested unordered list
-    + This is too with a plus
-    - This is too with a minus
 ```
 How the file would look rendered:
 
@@ -96,6 +94,11 @@ How the file would look rendered:
 ### Links
 
 ### Code Blocks
+Inline code highlighting is done with backticks ` `` ` around the code like ``` `this` ```. If you have a block of code then put three backticks before and after the block of code. Markdown also supports code highlighting.
+
 
 ### More
 There's so much more that Markdown can do but this is a solid foundation. To learn about all the wonders of Markdown, visit the [Markdown wiki](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to get a more complete list of what Markdown can do to help you creaate stunning and neat looking websites and files!
+
+## Extra Handy Tools
+* [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It's what I use for most of the application screenshots in this guide. 
