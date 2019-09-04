@@ -11,7 +11,8 @@ module.exports = {
         sidebar: {
             '/guide/': [
                 '',
-                'Before You Code'
+                'Before You Code',
+                'Styling Conventions & Coding'
             ]
         }
     }

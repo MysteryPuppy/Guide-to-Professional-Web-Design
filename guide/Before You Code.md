@@ -4,15 +4,16 @@ pageClass: more-inf-class
 
 # Before You Code
 
-Before you can really delve into the actual coding of a professional looking website, you first need a way to manage, showcase, and share your code. Many businesses use [GitHub](https://github.com), [BitBucket](https://bitbucket.org/product), or some other repository hosting service to track and manage code. Ultimately, some websites are even deployed from GitHub (like this one where the code is hosted on GitHub and served through [netlify](https://www.netlify.com/) :tada:). GitHub and BitBucket work in a similar way so it is easy to pick up one if you use the other. In this guide we'll be using GitHub since it is more commonly used.
-
-Enough talk though, let's get hands-on.
+This section contains information that I think every web designer should know. This information may not be *directly* related to making websites but it is important to have these skills and sometimes they are necessary to know in a work environment. Even if you consider yourself more of a designer, you do not want to have to depend on the programmers in your office to do a lot of extra work because you do not know how to use GitHub, host a website on your local machine, or do something else for you that is relatively easy to learn.
 
 ::: tip
 The best way to learn something is to do it, especially when it comes to coding. Please follow along with the examples in this guide.
 :::
 
 ## GitHub
+Before you can really delve into the actual coding of a professional-looking website, you first need a way to manage, showcase, and share your code. Many businesses use [GitHub](https://github.com), [BitBucket](https://bitbucket.org/product), or some other repository hosting service to track and manage code. Ultimately, some websites are even deployed from GitHub (like this one where the code is hosted on GitHub and served through [netlify](https://www.netlify.com/) :tada:). GitHub and BitBucket work in a similar way so it is easy to pick up one if you use the other. In this guide we'll be using GitHub since it is more commonly used.
+
+Enough talk though, let's get hands-on.
 If you don't have one already, make a GitHub account over at [https://github.com/join](https://github.com/join). After logging in, you should be able to create a new repository.
 
 ### Creating a Repository
@@ -28,12 +29,23 @@ A new page will open where you can enter details about your new project. Copy my
 
 Our repository is where we will put code relating to our project. How do we add and track code though, you ask? Simple! Well, once you get used to it. We will be accessing GitHub through from our command line and "pushing" code to our repository that way.
 
-### Adding Code to Your Repository
+### Git
 ::: tip
 The code in this guide works on Macs but the commands and applications may differ on Windows and Linux.
 :::
 
-First let us open our... [Continue]
+First let us open our terminal. You can do this by searching for `terminal` in your Mac Spotlight Search bar. Once it opens, this is where the magic begins. To keep things simple, let's start by going to our Desktop directory. You can do this by typing `cd Desktop`. To check what files are on your desktop you can type `ls` and it will list out any files you may have there.
+
+<img src="/7.png" width=70% height=70% alt="Typing in commands into terminal.">
+
+Before we can create and push files to our GitHub repository, we first have to install Git. The easiest way to do this is to install it with the package manager [Homebrew](https://brew.sh/). If you don't have Homebrew installed already, simply enter this into your terminal `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` and it will install it.
+
+Once Homebrew is installed, you can now install Git with the command ` brew install git`. Awesome! Now we're ready to clone our repository to our Desktop so we can work on it and then push it back. The good news is that you don't have to do this process everytime you want to work on a project. This is really a one-time thing and now you have Homebrew and git installed on your machine for future use.
+
+### Cloning Repositories
+Let's clone our repository! To do this, head back to GitHub and view your repository page we created. On the right side there should be a green button that says "Clone or Download". Copy the URL given in the box and then in your terminal type `git clone https://github.com/MysteryPuppy/TestRepo.git` but replace my repository URL with your own. Now if you type `ls` you'll see there's a new folder on your Desktop called whatever you named your repository. To enter this folder, type `cd TestRepo` (where TestRepo is whatever your repository is called) and you're in. **Hacker noises.**
+
+
 
 That was kind of a lot to take in, wasn't it? Take a break and feel proud that now you know how to use GitHub and the terminal.
 
@@ -85,6 +97,7 @@ To make a list in Markdown simply start a line with `* ` to make an unordered li
 2. Ordered list
     * This is a nested unordered list
 ```
+
 How the file would look rendered:
 
 <img src="/4.png" alt="Rendered Markdown file where there is an unordered list and an ordered list. The ordered list also has a nested unordered list in it.">
@@ -105,14 +118,13 @@ The rendered result:
 
 <img src="/5.png" alt="Rendered Markdown file where there is italic, bold, italic bold, and strikethrough text seen without the stars and tildes around it in the rendered version.">
 
-
 ### Links
 To add a link to a file simply put brackets `[]` around the word you want to be the link and then after the brackets put the link in parentheses `()`. For example, if I wanted to make a link to google I could write `This is a link to [Google](https://www.google.com )`. You can also link to internal headers, which act as anchors in the page. For instance, if we had a header `# Cats` we could link to it like so `Here is a link to [cats are great](#Cats)`.
 
 ### Code Blocks
 Inline code highlighting is done with backticks ` `` ` around the code like ``` `this` ```. If you have a block of code then put three backticks before and after the block of code. Markdown also supports code highlighting. For example:
 
-```python
+```Python
 print("This is some Python code")
 if(2==2):
   print("This will always print")
@@ -128,8 +140,6 @@ This is **Markdown!** Wow it looks *cool*
 The code:
 
 <img src="/6.png" alt="Unrendered Markdown file that shows how to get different syntax highlighting to work. After the first three backticks, write a programming language name like python or Markdown to get the correct syntax highlighting.">
-
-
 
 ### More
 There's so much more that Markdown can do but this is a solid foundation. To learn about all the wonders of Markdown, visit the [Markdown wiki](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to get a more complete list of what Markdown can do to help you creaate stunning and neat looking websites and files!
