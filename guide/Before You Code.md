@@ -25,9 +25,9 @@ A new page will open where you can enter details about your new project. Copy my
 
 <img src="/2.png" alt="Repository details entered. Name is TestRepo and the description doesn't matter for now. The add README option is selected.">
 
-"Initialize this repository with a README" just means that GitHub will put a Markdown file called README.md in your repository on creation. This file usually contains information about what the repository contains. If you're interested in learning more about how to create a README.md file, hop down to the [Markdown](Before%20You%20Code.html#markdown) section for a few minutes to learn about that.
+“Initialize this repository with a README” just means that GitHub will put a Markdown file called README.md in your repository on creation. This file usually contains information about what the repository contains. If you're interested in learning more about how to create a README.md file, hop down to the [Markdown](Before%20You%20Code.html#markdown) section for a few minutes to learn about that.
 
-Our repository is where we will put code relating to our project. How do we add and track code though, you ask? Simple! Well, once you get used to it. We will be accessing GitHub through from our command line and "pushing" code to our repository that way.
+Our repository is where we will put code relating to our project. How do we add and track code though, you ask? Simple! Well, once you get used to it. We will be accessing GitHub through from our command line and “pushing” code to our repository that way.
 
 ### Git
 ::: tip
@@ -40,17 +40,17 @@ First let us open our terminal. You can do this by searching for `terminal` in y
 
 Before we can create and push files to our GitHub repository, we first have to install Git. The easiest way to do this is to install it with the package manager [Homebrew](https://brew.sh/). If you don't have Homebrew installed already, simply enter this into your terminal `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` and it will install it.
 
-Once Homebrew is installed, you can now install Git with the command ` brew install git`. Awesome! Now we're ready to clone our repository to our Desktop so we can work on it and then push it back. The good news is that you don't have to do this process everytime you want to work on a project. This is really a one-time thing and now you have Homebrew and git installed on your machine for future use.
+Once Homebrew is installed, you can now install Git with the command ` brew install git`. Awesome! Now we're ready to clone our repository to our Desktop so that we can work on it and then push it back. The good news is that you don't have to do this process every time you want to work on a project. This is really a one-time thing and now you have Homebrew and git installed on your machine for future use.
 
 ### Cloning Repositories
-Let's clone our repository! To do this, head back to GitHub and view your repository page we created. On the right side there should be a green button that says "Clone or Download". Copy the URL given in the box and then in your terminal type `git clone https://github.com/MysteryPuppy/TestRepo.git` but replace my repository URL with your own. Now if you type `ls` you'll see there's a new folder on your Desktop called whatever you named your repository. To enter this folder, type `cd TestRepo` (where TestRepo is whatever your repository is called) and you're in. **Hacker noises.**
+Let's clone our repository! To do this, head back to GitHub and view your repository page we created. On the right side there should be a green button that says “Clone or Download”. Copy the URL given in the box and then in your terminal type `git clone https://github.com/MysteryPuppy/TestRepo.git` but replace my repository URL with your own. Now if you type `ls` you'll see there's a new folder on your Desktop called whatever you named your repository. To enter this folder, type `cd TestRepo` (where TestRepo is whatever your repository is called) and you're in. **Hacker noises.**
 
 
 
-That was kind of a lot to take in, wasn't it? Take a break and feel proud that now you know how to use GitHub and the terminal.
+That was a lot to take in, wasn't it? Take a break and feel proud that now you know how to use GitHub and the terminal.
 
 ## Markdown
-Markdown isn't often taught and it's usually more something that one picks up after being around the coding scene for long enough. Markdown is a "lightweight markup language" and it's easy enough to pick up in around 5 minutes. While it may seem trivial, it can be extremely helpful when creating README.md files for repositories, making organized notes, or even for drafting blog posts. This very page was actually written in Markdown belive it or not with the static site generator [VuePress](https://vuepress.vuejs.org/). The possiblities are endless and it's so easy to learn that there really isn't a reason to *not* know it.
+Markdown isn't often taught and it's usually more something that one picks up after being around the coding scene for long enough. Markdown is a lightweight markup language and it's easy enough to pick up in around 5 minutes. While it may seem trivial, it can be extremely helpful when creating README.md files for repositories, making organized notes, or even for drafting blog posts. This very page was actually written in Markdown believe it or not with the static site generator [VuePress](https://vuepress.vuejs.org/). The possibilities are endless and it's so easy to learn that there really isn't a reason to *not* know it.
 
 So, how do we use Markdown? Simple! Open up your favorite text editor (mine is [Atom](https://atom.io/) but it doesn't matter which one you use) and create a new file. The way you create a Markdown file is simply to save it with the extension `.md` like this: `exampleFile.md`. That's it! To view the rendered version of your markup file install a plugin on your text editor if it's supported. Another way to view your markdown file is to use an online Markdown editor which there a plethora of free ones. These include but not limited to:
 
@@ -64,7 +64,7 @@ These sites also usually come with an example page that reminds you about the Ma
 ::: tip
 Don't forget to put a space between the pound symbol `# ` and your words
 :::
-Headers are essentially titles and they can have varying font sizes.. The biggest header size is H1 and this goes all the way down to size H6. To create a header, simply put a pound sign `# ` in front of the word(s) where one pound sign `# ` is H1, two pound signs `## ` is H2, three pound signs `### ` is H3, and so on. For example view this raw Markdown file:
+Headers are essentially titles and they can have varying font sizes. The biggest header size is H1 and this goes all the way down to size H6. To create a header, simply put a pound sign `# ` in front of the word(s) where one pound sign `# ` is H1, two pound signs `## ` is H2, three pound signs `### ` is H3, and so on. For example view this raw Markdown file:
 
 ```markdown
 # This is verrrry big
@@ -104,14 +104,14 @@ How the file would look rendered:
 
 ### Text Styling
 
-Text styling is easy! To make something italic, put asterisk characters `*` around it like this `*This is italic*`. To make something bold, put two asterisk characters `**` around it like this `**This is bold**`. To strikethrough text, put two tilde characters `~~` around it like this `~~This is strikedthrough~~`.
+Text styling is easy! To make something italic, put asterisk characters `*` around it like this `*This is italic*`. To make something bold, put two asterisk characters `**` around it like this `**This is bold**`. To strike through text, put two tilde characters `~~` around it like this `~~This is striked through~~`.
 
 The code:
 ```markdown
 *This is italic*
 **This is bold**
 ***This is italic bold***
-~~This is strikedthrough~~
+~~This is striked through~~
 ```
 
 The rendered result:
@@ -119,7 +119,7 @@ The rendered result:
 <img src="/5.png" alt="Rendered Markdown file where there is italic, bold, italic bold, and strikethrough text seen without the stars and tildes around it in the rendered version.">
 
 ### Links
-To add a link to a file simply put brackets `[]` around the word you want to be the link and then after the brackets put the link in parentheses `()`. For example, if I wanted to make a link to google I could write `This is a link to [Google](https://www.google.com )`. You can also link to internal headers, which act as anchors in the page. For instance, if we had a header `# Cats` we could link to it like so `Here is a link to [cats are great](#Cats)`.
+To add a link to a file simply put brackets `[]` around the word you want to be the link and then after the brackets put the link in parentheses `()`. For example, if I wanted to make a link to google I could write `This is a link to [Google](https://www.google.com)`. You can also link to internal headers, which act as anchors in the page. For instance, if we had a header `# Cats` we could link to it like so `Here is a link to [cats are great](#Cats)`.
 
 ### Code Blocks
 Inline code highlighting is done with backticks ` `` ` around the code like ``` `this` ```. If you have a block of code then put three backticks before and after the block of code. Markdown also supports code highlighting. For example:
@@ -142,7 +142,7 @@ The code:
 <img src="/6.png" alt="Unrendered Markdown file that shows how to get different syntax highlighting to work. After the first three backticks, write a programming language name like python or Markdown to get the correct syntax highlighting.">
 
 ### More
-There's so much more that Markdown can do but this is a solid foundation. To learn about all the wonders of Markdown, visit the [Markdown wiki](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to get a more complete list of what Markdown can do to help you creaate stunning and neat looking websites and files!
+There's so much more that Markdown can do but this is a solid foundation. To learn about all the wonders of Markdown, visit the [Markdown wiki](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to get a more complete list of what Markdown can do to help you create stunning and neat looking websites and files!
 
 You've learned a lot already though, maybe consider a coffee break? :coffee:
 
