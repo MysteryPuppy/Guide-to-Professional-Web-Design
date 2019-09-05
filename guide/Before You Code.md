@@ -146,5 +146,15 @@ There's so much more that Markdown can do but this is a solid foundation. To lea
 
 You've learned a lot already though, maybe consider a coffee break? :coffee:
 
+## PNGs VS SVGs
+This section is going to be short and sweet. It is *vital* to know the difference between a PNG and an SVG image file. PNGs are a raster image file format which means that if you scale up or down the image you will see the pixels that make up the image start to distort. An SVG is a vector image and no matter how you scale it, it will look the same and you will not see any pixel distortion.
+
+An example of an PNG and SVG both scaled down to 30%.
+
+  <img src="/ball.png" width=40% height=40% alt="An image of a ball that's a png.">
+  <img src="/ball.svg" width=40% height=40% alt="An image of a ball that's a svg.">
+
+The PNG on the left looks a lot blurrier because its pixels were distorted while the SVG on the right looks perfect. This is why logos are often SVGs. Some images work better as PNGs like photos and screenshots. 
+
 ## Extra Handy Tools
 * :camera: [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It's what I use for most of the application screenshots in this guide.
