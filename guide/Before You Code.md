@@ -64,14 +64,30 @@ Now that we've added some files and changed the contents of others, let's push t
 
 If all worked correctly, you'll now be able to see the new files if you go to your GitHub repository page. Great! Now go forth and use GitHub in your future projects.
 
-Test
+### Pulling
+So now you know the basics of how to use GitHub when working on a project alone but what happens when you're working with other people? There's one big rule to follow: **Always `git pull` before working on a file that more than one person are working on.** This command retrieves changed files from the repository and downloads them to your desktop. This way you don't accidentally start coding on an old version of the program and overwrite your teammate's work. Be sure to tell your teammate if you changed a file so that they know to `git pull` if you don't usually change files that they work on. It is just nice to do.
 
-## Git Pulls
+### Branches
+In GitHub there is a concept called "branches" and basically it's an isolated code development space where someone can work on their part of the code away from the main or `master` branch without changing the code in the `master` branch. It is good practice to only push finalized code to the `master` branch so when you're in a team and working with others work in a branch instead of on the `master` branch.
+
+To make a new branch go to your GitHub repository and press on the button that says `Branch: master` and type in a name for your new branch. I will be calling mine “working” and press the 'Create branch: working` option. Now we have a branch...but how do we use it?
+
+<img src="/10.png" width=70% height=70% alt="A picture of GitHub clicking on the Create branch: working option.">
+
+Back in your terminal, type `git fetch && git checkout working` to switch to the new branch called working. Now you're in the new branch. Let's change something. I'm going to add a new file with `touch NewFile.md`. Let's add this new file to the branch. To do this do `git add NewFile.md` then `git commit -m "adding a new file"` and finally do `git push origin Working`. Remember to push to `Working` instead of `master` this time since we are not in the master branch.
+
+::: tip
+To check which branch you're in type `git branch` at any time.
+:::
+
+To switch back to the master branch you can `git checkout master` to return. Just keep track of which branch you're in!
+
+### Pull Requests & Merging
+Once you're satisfied with your branch and you think it is ready to join the final product, open a Pull Request. This says that you are ready for your code to be reviewed and if it is up-to-par it will then be added to the `master` branch. To open a Pull Request, go to your GitHub repository page, click on the `Pull Requests` tab at the tip and click on the green `New Pull Request` button.
 
 
-### Pull Requests
 
-That was a lot to take in, wasn't it? Take a break and feel proud that now you know how to use GitHub and the terminal.
+That was a lot to take in, wasn't it? Take a break and feel proud that now you know how to use GitHub and the terminal 🎉
 
 ## Markdown
 Markdown isn't often taught and it is usually more something that one picks up after being around the coding scene for long enough. Markdown is a lightweight markup language and it is easy enough to pick up in around 5 minutes. While it may seem trivial, it can be extremely helpful when creating README.md files for repositories, making organized notes, or even for drafting blog posts. This very page was actually written in Markdown believe it or not with the static site generator [VuePress](https://vuepress.vuejs.org/). The possibilities are endless and it is so easy to learn that there really isn't a reason to *not* know it.
