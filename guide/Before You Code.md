@@ -38,21 +38,43 @@ First let us open our terminal. You can do this by searching for `terminal` in y
 
 <img src="/7.png" width=70% height=70% alt="Typing in commands into terminal.">
 
+On my Desktop I have four folders and a TODO.md file.
+
 Before we can create and push files to our GitHub repository, we first have to install Git. The easiest way to do this is to install it with the package manager [Homebrew](https://brew.sh/). If you don't have Homebrew installed already, simply enter this into your terminal `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` and it will install it.
 
-Once Homebrew is installed, you can now install Git with the command ` brew install git`. Awesome! Now we're ready to clone our repository to our Desktop so that we can work on it and then push it back. The good news is that you don't have to do this process every time you want to work on a project. This is really a one-time thing and now you have Homebrew and git installed on your machine for future use.
+Once Homebrew is installed, you can now install Git with the command ` brew install git`. To verify that it is installed, try typing `git version` and if it tells you the version installed then it worked. Awesome! Now we're ready to clone our repository to our Desktop so that we can work on it and then push it back. The good news is that you don't have to do this process every time you want to work on a project. This is really a one-time thing and now you have Homebrew and git installed on your machine for future use.
 
 ### Cloning Repositories
-Let's clone our repository! To do this, head back to GitHub and view your repository page we created. On the right side there should be a green button that says “Clone or Download”. Copy the URL given in the box and then in your terminal type `git clone https://github.com/MysteryPuppy/TestRepo.git` but replace my repository URL with your own. Now if you type `ls` you'll see there's a new folder on your Desktop called whatever you named your repository. To enter this folder, type `cd TestRepo` (where TestRepo is whatever your repository is called) and you're in. **Hacker noises.**
+Let's clone our repository! To do this, head back to GitHub and view your repository page we created. On the right side there should be a green button that says “Clone or Download”. Copy the URL given in the box and then in your terminal type `git clone https://github.com/MysteryPuppy/TestRepo.git` but replace my repository URL with your own. Now if you type `ls` you'll see there's a new folder on your Desktop called whatever you named your repository. To enter this folder, type `cd TestRepo` (where TestRepo is whatever your repository is called) and you're in.
+
+<img src="/8.png" width=70% height=70% alt="Typing in commands into terminal.">
+
+Now you're in the directory of the cloned repository. If you type `ls` again you'll see that it is empty aside from our README.md file. Let's get to adding files!
+
+### Changing Files
+To add a file from your terminal you can write `touch FileName.md` to create a new Markdown file with the name FileName. `ls` again and you'll see that now it is in our directory. You can also view the file if you check the folder on your desktop. To put text in the file let's drag the file into a text editor. I will be using [Atom](https://atom.io/) but any text editor works. Add anything you want into the file and then save it. Let's also do the same with README.md.
+
+<img src="/9.png" alt="A picture of a text editor with the text 'here is a file that we'll be putting up on GitHib~ Wowza.' in it">
+
+Change/put anything you want into the file.
+
+### Adding, Commiting & Pushing Files
+
+Now that we've added some files and changed the contents of others, let's push these changes to GitHub so that it saves the current state of our code. To do this type `git add .` into your terminal to add all changed files. If you only wanted to change one file you could also specify a file name instead of writing a period like so `git add README.md`. If you type `git status` you'll see that the files you added/changed will appear under the text that says "changes to be committed." To commit the changes we write `git commit -m "These are our first changes!"`. Now the files are commited. All that's left to do is push them to the GitHub repository. To do this, type `git push origin master`. The terminal may ask you for your username and password here so just enter those details.
+
+If all worked correctly, you'll now be able to see the new files if you go to your GitHub repository page. Great! Now go forth and use GitHub in your future projects.
+
+## Git Pulls
 
 
+### Pull Requests
 
 That was a lot to take in, wasn't it? Take a break and feel proud that now you know how to use GitHub and the terminal.
 
 ## Markdown
-Markdown isn't often taught and it's usually more something that one picks up after being around the coding scene for long enough. Markdown is a lightweight markup language and it's easy enough to pick up in around 5 minutes. While it may seem trivial, it can be extremely helpful when creating README.md files for repositories, making organized notes, or even for drafting blog posts. This very page was actually written in Markdown believe it or not with the static site generator [VuePress](https://vuepress.vuejs.org/). The possibilities are endless and it's so easy to learn that there really isn't a reason to *not* know it.
+Markdown isn't often taught and it is usually more something that one picks up after being around the coding scene for long enough. Markdown is a lightweight markup language and it is easy enough to pick up in around 5 minutes. While it may seem trivial, it can be extremely helpful when creating README.md files for repositories, making organized notes, or even for drafting blog posts. This very page was actually written in Markdown believe it or not with the static site generator [VuePress](https://vuepress.vuejs.org/). The possibilities are endless and it is so easy to learn that there really isn't a reason to *not* know it.
 
-So, how do we use Markdown? Simple! Open up your favorite text editor (mine is [Atom](https://atom.io/) but it doesn't matter which one you use) and create a new file. The way you create a Markdown file is simply to save it with the extension `.md` like this: `exampleFile.md`. That's it! To view the rendered version of your markup file install a plugin on your text editor if it's supported. Another way to view your markdown file is to use an online Markdown editor which there a plethora of free ones. These include but not limited to:
+So, how do we use Markdown? Simple! Open up your favorite text editor (mine is [Atom](https://atom.io/) but it doesn't matter which one you use) and create a new file. The way you create a Markdown file is simply to save it with the extension `.md` like this: `exampleFile.md`. That's it! To view the rendered version of your markup file install a plugin on your text editor if it is supported. Another way to view your markdown file is to use an online Markdown editor which there a plethora of free ones. These include but not limited to:
 
   * [Stackedit](https://stackedit.io)
   * [Dillinger](https://dillinger.io)
@@ -154,7 +176,4 @@ An example of an PNG and SVG both scaled down to 30%.
   <img src="/ball.png" width=40% height=40% alt="An image of a ball that's a png.">
   <img src="/ball.svg" width=40% height=40% alt="An image of a ball that's a svg.">
 
-The PNG on the left looks a lot blurrier because its pixels were distorted while the SVG on the right looks perfect. This is why logos are often SVGs. Some images work better as PNGs like photos and screenshots. 
-
-## Extra Handy Tools
-* :camera: [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It's what I use for most of the application screenshots in this guide.
+The PNG on the left looks a lot blurrier because its pixels were distorted while the SVG on the right looks perfect. This is why logos are often SVGs. Some images work better as PNGs like photos and screenshots.
