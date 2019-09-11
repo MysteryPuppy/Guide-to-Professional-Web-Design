@@ -31,10 +31,71 @@ The same goes for using "cheats" like `&nbsp;` to add padding or space unless ab
 <!--Do this-->
 <a href="about.html">Link to local about.html page</a>
 ```
+* Indent with 2 spaces, not with tabs. This applies to CSS code as well. Keep in mind that your text editor tabs might be 2 spaces by default. In applications not specifically made for coding the tabs will usually be eight spaces.
+```html
+<!--Indented with tab-->
+<div>
+       <h3>This gets messy fast</h3>
+       <p>Yes it does</p>
+</div>
+<!--Indented with 2 spaces-->
+<div>
+  <h3>This is great</h3>
+  <p>Yes it is</p>
+</div>
+```
+* Put double quotes `class="hide-mobile"` around attribute values, not single quotation marks `class='hide-mobile'`
+* Only use id `<div id="unique-header">` when the id will not be used on the page again. It marks a unique element.
+
+To learn more, view [Google's styleguide](https://google.github.io/styleguide/htmlcssguide.html).
+
 
 ## CSS Rules & Tips
-* When a value is equal to 0 do not put units after the 0. EX: **DO** `margin-top: 0;` and **NOT** `margin-top: 0px;`.
+* When a value is equal to 0 do not put units after the 0. EX: **DO** `margin-top: 0;` and **NOT** `margin-top: 0px;`. Also omit leading "0"s in values. For example `font-size: 0.4rem;` should be `font-size: .4rem;`
 * `Command + Shift + R` completely refreshes a Chrome page which is especially useful when working on CSS as sometimes when you simply refresh the page it does not update the CSS.
+* It's possible to write comments in CSS with ```/* This is a comment */```
+* Use shorthand properties when you can so that code is more legiable. For example:
+
+```CSS
+/* This is inefficient */
+margin-top: 30px;
+margin-right: 40px;
+margin-bottom: 20px;
+margin-left: 14px;
+
+/* This is clean */
+/* Note that the colors go in clockwise order: top, right, bottom, left */
+margin: 30px 40px 20px 14px;
+
+/* Keep in mind that if you define 1 value it applies to sides */
+/* If you define 2 values the first value defines top&bottom and the second value defines left&right sides. */
+```
+You can read more about many different shorthand properties [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
+* In class and id names do not use capitals or underscores. Use hyphens instead to indicate two different words. Example:
+```CSS
+/* Do not do this */
+.VideoSquare {}
+
+.Second_form {}
+
+/* Instead do this */
+.video-square {}
+
+.second-form {}
+```
+* Ideally, CSS should be in alphabetical order.
+* Put a space between the property and its value to make the CSS more readable. Example: `h3 { font-size: 30px; }`. Also put a line between rules. Example:
+```CSS
+body {
+  color: white;
+}
+
+div {
+  color: blue;
+}
+```
+
+To learn more, view [Google's styleguide](https://google.github.io/styleguide/htmlcssguide.html#CSS)
 
 ## External File Rules - CSS, JS, Etc
 One of the most important and useful things you can do while coding is to make sure that your scripts, HTML, and CSS are all in seperate files whenever possible. A *huge* no-no is having inline CSS code unless it is absolutely neccisary. Yes, it is momentarily easier sometimes to just change the color of a div's text by sliding in a quick `<div style="color: #000;">` but this is poor practice. What if someone else needs to update your code later and they go to the CSS file and try to change the color of all div's text to purple but for some reason this one specific div is black? Now imagine that on a large-scale and you can see how annoying that would be to go back and change. Thus, make sure to link an external CSS file and do **all** style changes there.
