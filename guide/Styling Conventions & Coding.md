@@ -94,6 +94,7 @@ div {
   color: blue;
 }
 ```
+* To make your CSS more elegant it is advised to learn how to use Flexbox. [Here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) is a good guide to learning Flexbox and [here](http://flexboxfroggy.com/) is a fun game to hone your Flexbox skills.
 
 To learn more, view [Google's styleguide](https://google.github.io/styleguide/htmlcssguide.html#CSS)
 
@@ -102,17 +103,14 @@ One of the most important and useful things you can do while coding is to make s
 
 This same concept goes for Javascript/other code files as well. Keep your different languages seperate and your work directories neat. It is easy to think *well, as long as it works it's fine...* but this is a short-sighted way of thinking because you *will* need to do a lot of editing later and your project *will* get messy later if you carelessly put many languages/functions in one file. Be warned!
 
-## GitHub Etiquette
-
 ## Logos & Company Assets
-Working at a company comes with some legal and branding issues artists should be aware of. If the company has a specific color pallet, ask for the specific color codes and use them in your designs.
-* Do not warp, unevenly scale, or distort the company logo.
+Working at a company comes with some legal and branding issues artists should be aware of. If the company has a specific color pallet, ask for the specific color codes and use them in your designs. Do not warp, unevenly scale, or distort the company logo. Changing up the logo/colors too much can cause people to not be able to recognize the company.
 
 ## Accessibility
 When making websites for a company you should keep in mind that many different kinds of people will be viewing this site and the content and not all of them may have the same physical abilities. A site is accessable when people with visual, motor, speech, auditory, or cognitive disabilities can use it. There are some basic rules that should be followed to make your site easier for more people to use!
 
 1. Use high-contrast colors
-2. All images should have and alt value that describes the image
+2. All images should have an alt value that describes the image
 3. Use labels instead of placeholder text
 4. Remeber that some people are colorblind and so important information should not be conveyed only through colors
 
@@ -152,7 +150,21 @@ On the other hand, if we wanted to make all div's font color pink when the scree
 For more information about size-specific styling, view [this tutorial](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp).
 
 ## Debugging Your Website
-Sometimes while working on your website some things just do not look the way you thought they would and you just can't figure out how to fix it. When you hit a bump the developer tools come in handy again. 
+Sometimes while working on your website some things just do not look the way you thought they would and you just can't figure out how to fix it. When you hit a bump open the `Developer Tools` again on your browser and under the `Elements` tab view your site's HTML and CSS code. It is possible to add, remove, and edit styles in this view and the live editing makes it easier to find out how best to fix an issue.
+
+<img src="/12.png" alt="A picture of the HTML and CSS of a website in Google Chrome's Developer Tools.">
+
+You can then use an HTML linter to check if your HTML file/s are formatted correctly.
+
+Keep in mind that Google and [StackOverflow](https://stackoverflow.com/) are great places to turn to if a problem can't be fixed. There is no shame in not knowing something as long as you are learning.
+
+## Good to Know
+Below are a list of libraries, languages, tools, etc. that it could benefit any webdesigner/frontend dev to know. By no means is every one of them neccisary to know but it never hurts to learn more.
+1. [VuePress: ](https://vuepress.vuejs.org/) VuePress is a "Vue-powered Static Site Generator" and is what was used to make this very site. It makes making documentation & blog sites a breeze to set up and you just write in Markdown so if you followed the tutorial in the first section you are basically good to go.
+2. [SASS: ](https://sass-lang.com) Repeating code is not fun and there is almost nothing more frustrating than having to go through CSS code and manually change a value thirty times. SASS is a more advanced CSS that allows you to store variables, has superior visual hierarchy, lets you import other SCSS files, and will make you wonder why CSS wasn't made like this is the first place.
+3. [EJS: ](https://ejs.co/) EJS is a "simple templating language that lets you generate HTML markup with plain JavaScript." Gone are the days of putting the same header and footer code on every new page. Just put in one line of EJS code!
+4. [Sketch, ](https://www.sketch.com) [Adobe XD, ](https://www.adobe.com/uk/products/xd.html) or [Figma: ](https://www.figma.com/) Whether or not you are a designer, it's a good idea to know how to mockup a website. These tools are the best in the trade at the moment and will have you making professional looking websites faster than you would think possible.
+5. [Netlify, ](https://www.netlify.com/) or [Heroku: ](https://dashboard.heroku.com/apps/ikou-learn/deploy/heroku-git) Hosting a site has never been easier than with Netlify and Heroku. Both these services allow users to deploy websites for free from GitHub/GitLab/Bitbucket. This site is hosted on Netlify. 
 
 ## Extra Handy Tools
 * [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It is what I use for most of the application screenshots in this guide.
