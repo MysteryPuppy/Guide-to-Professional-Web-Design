@@ -53,7 +53,7 @@ To learn more, view [Google's styleguide](https://google.github.io/styleguide/ht
 ## CSS Rules & Tips
 * When a value is equal to 0 do not put units after the 0. EX: **DO** `margin-top: 0;` and **NOT** `margin-top: 0px;`. Also omit leading "0"s in values. For example `font-size: 0.4rem;` should be `font-size: .4rem;`
 * `Command + Shift + R` completely refreshes a Chrome page which is especially useful when working on CSS as sometimes when you simply refresh the page it does not update the CSS.
-* It's possible to write comments in CSS with ```/* This is a comment */```
+* It is possible to write comments in CSS with ```/* This is a comment */```
 * Use shorthand properties when you can so that code is more legiable. For example:
 
 ```CSS
@@ -152,8 +152,9 @@ On the other hand, if we wanted to make all div's font color pink when the scree
 For more information about size-specific styling, view [this tutorial](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp).
 
 ## Debugging Your Website
+Sometimes while working on your website some things just do not look the way you thought they would and you just can't figure out how to fix it. When you hit a bump the developer tools come in handy again. 
 
 ## Extra Handy Tools
-* [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It's what I use for most of the application screenshots in this guide.
+* [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It is what I use for most of the application screenshots in this guide.
 * [Unsplash: ](https://unsplash.com/) This site has thousands of high-resolution, royalty free images you can use on your site.
 * [Contrast: ](https://usecontrast.com/) A macOS app for quick access to WCAG color contrast ratios.
