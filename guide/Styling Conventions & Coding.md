@@ -4,13 +4,42 @@ pageClass: more-inf-class
 
 # Styling Conventions & Coding
 
+## HTML Rules & Tips
+* If you have a `<br>` tag, do not close it and also return the text after it to a new line in your code. Example:
+```HTML
+<p>
+  This is a line of text before a <br>
+  This is where I continue writing after
+</p>
+```
+* Do **not** use `<br>` tags to put space between text and images/other elements. `<br>` should be exclusively used to create line breaks between text. It is very bad practice to have something like this:
+```html
+Some text
+<br>
+<br>
+<br>
+<img src="cat.png">
+```
+The same goes for using "cheats" like `&nbsp;` to add padding or space unless absolutely needed. Use CSS instead to add space.
+* Install an HTML formatter like [Prettify](https://atom.io/packages/atom-prettify) or [Beautify](https://atom.io/packages/atom-beautify) on your text editor if possible to automatically format your code and make it look organized and neat. If your editor does not have that kind of functionality, an online formatter works as well.
+* **Do not use inline CSS styling unless <mark>absolutely</mark> necessary.**
+* Links to local pages should not use the full URL but instead use a relative URL. Example:
+```HTML
+<!--Don't do this-->
+<a href="https://ExampleSite.com/about.html">Link to local about.html page</a>
+
+<!--Do this-->
+<a href="about.html">Link to local about.html page</a>
+```
+
+## CSS Rules & Tips
+* When a value is equal to 0 do not put units after the 0. EX: **DO** `margin-top: 0;` and **NOT** `margin-top: 0px;`.
+* `Command + Shift + R` completely refreshes a Chrome page which is especially useful when working on CSS as sometimes when you simply refresh the page it does not update the CSS.
+
 ## External File Rules - CSS, JS, Etc
-One of the most important and useful things you while coding is to make sure that your scripts, HTML, and CSS are all in seperate files whenever possible. A *huge* no-no is having inline CSS code unless it is absolutely neccisary. Yes, it is momentarily easier sometimes to just change the color of a div's text by sliding in a quick `<div style="color: #000;">` but this is poor practice. What if someone else needs to update your code later and they go to the CSS file and try to change the color of all div's text to purple but for some reason this one specific div is black? Now imagine that on a large-scale and you can see how annoying that would be to go back and change. Thus, make sure to link an external CSS file and do **all** style changes there.
+One of the most important and useful things you can do while coding is to make sure that your scripts, HTML, and CSS are all in seperate files whenever possible. A *huge* no-no is having inline CSS code unless it is absolutely neccisary. Yes, it is momentarily easier sometimes to just change the color of a div's text by sliding in a quick `<div style="color: #000;">` but this is poor practice. What if someone else needs to update your code later and they go to the CSS file and try to change the color of all div's text to purple but for some reason this one specific div is black? Now imagine that on a large-scale and you can see how annoying that would be to go back and change. Thus, make sure to link an external CSS file and do **all** style changes there.
 
 This same concept goes for Javascript/other code files as well. Keep your different languages seperate and your work directories neat. It is easy to think *well, as long as it works it's fine...* but this is a short-sighted way of thinking because you *will* need to do a lot of editing later and your project *will* get messy later if you carelessly put many languages/functions in one file. Be warned!
-
-## CSS tips
-* When a value is equal to 0 do not put units after the 0. EX: **DO** `margin-top: 0;` and **NOT** `margin-top: 0px;`.
 
 ## GitHub Etiquette
 
@@ -28,22 +57,40 @@ When making websites for a company you should keep in mind that many different k
 
 For more information, please read [this article](https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94). Use the Chrome extension [AxeCoconut](https://chrome.google.com/webstore/detail/axe-coconut/iobddmbdndbbbfjopjdgadphaoihpojp?hl=en) to see if your site checks all the boxes!
 
-
-
-
 ## Only Important Information
 
 ## Compatability Checking Your Website
-It is important to remember that not all of the people visiting the site will be on the same device, browser, or screensize. A good way to check how your site looks on different devices in Chrome is to right-click and press `inspect.` This will bring up Chrome's dev tools. You can also get these by going to `View > Developer > Developer Tools`. Here you can see the source code, alter CSS, and much more. At the top of your website you will see a bar. Click on the arrow next to `responsive` and you will see a number of mobile/handheld devices to select from. This changes the dimensions of the page and you can see how your website would look on these devices.
+It is important to remember that not all of the people visiting the site will be on the same device, browser, or screensize. A good way to check how your site looks on different devices in Chrome is to right-click and press `inspect`. This will bring up Chrome's dev tools. You can also get these by going to `View > Developer > Developer Tools`. Here you can see the source code, alter CSS, and much more. At the top of your website you will see a bar. Click on the arrow next to `responsive` and you will see a number of mobile/handheld devices to select from. This changes the dimensions of the webpage and you can see how your website would look on these devices.
+
+<img width=70% height=70% src="/11.png" alt="A picture of the different screen size options.">
 
 Also remember to check how the website looks on all major browsers. Sometimes weird CSS changes can occur on different browsers so it is always a good idea to check. Simply open the website on Firefox, Chrome, Safari, Edge, etc.
 
 ## Styling For Mobile Devices
+Nowadays the internet is not only accessed through computers with landscape oriented screens but also from mobile devices who have portrait oriented screens. When designing a website it is important to make sure that your website 1. looks good on both kinds of devices and 2. is usable on both kinds of devices. Sometimes websites forget mobile users and navigaation bars become nightmares to use and buttons are difficult to touch. Make sure to use the developer tools to see how your site will look on mobile devices throughout the process of making the website.
+
+In CSS it is also possible to specify specific styles that should happen only when the screen width is smaller/larger than a specific number. For instance, if we wanted our body font color to be black but **only on screens with a width smaller than 720px** then we would write this:
+
+```CSS
+@media only screen and (max-width: 720px) {
+  body {
+    color: black;
+  }
+}
+```
+On the other hand, if we wanted to make all div's font color pink when the screen was larger than 720px wide then we would write:
+
+```CSS
+@media only screen and (min-width: 720px) {
+  div {
+    color: pink;
+  }
+}
+```
+
+For more information about size-specific styling, view [this tutorial](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp).
 
 ## Debugging Your Website
-
-## Tips
-* `Command + Shift + R` completely refreshes a Chrome page which is especially useful when working on CSS as sometimes when you simply refresh the page it does not update the CSS.
 
 ## Extra Handy Tools
 * [ScreenToLayers: ](https://apps.apple.com/us/app/screentolayers) This app converts open windows on your desktop into pngs/PSD files and makes them look neat. It's what I use for most of the application screenshots in this guide.

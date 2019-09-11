@@ -85,8 +85,6 @@ To switch back to the master branch you can `git checkout master` to return. Jus
 ### Pull Requests & Merging
 Once you're satisfied with your branch and you think it is ready to join the final product, open a Pull Request. This says that you are ready for your code to be reviewed and if it is up-to-par it will then be added to the `master` branch. To open a Pull Request, go to your GitHub repository page, click on the `Pull Requests` tab at the tip and click on the green `New Pull Request` button.
 
-
-
 That was a lot to take in, wasn't it? Take a break and feel proud that now you know how to use GitHub and the terminal 🎉
 
 ## Markdown
