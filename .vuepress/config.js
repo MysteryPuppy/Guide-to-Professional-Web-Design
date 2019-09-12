@@ -12,7 +12,8 @@ module.exports = {
             '/guide/': [
                 '',
                 'Before You Code',
-                'Styling Conventions & Coding'
+                'Styling Conventions & Coding',
+                'Afterword'
             ]
         }
     }
