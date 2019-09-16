@@ -113,7 +113,7 @@ Brief walkthrough of how to push code to GitHub:
 6. Type `git remote -v`
 7. Type `git push -u origin master` which will push your changes to the GitHub repository.
 
-
+Great! Now the code is on GitHub. Note that you do not need to type `git init` or `git remote add origin https://github.com/MysteryPuppy/Test-Site.git` every time.
 
 ### Package.json
 This is perhaps the most difficult/potentially frustrating part of the process. We must create a file called `package.json` in the root of our project. Copy & paste the below content into your file and alter the GitHub links to your own repository.
@@ -136,7 +136,7 @@ This is perhaps the most difficult/potentially frustrating part of the process. 
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/MysteryPuppy/Test-Site.git/issues"
   },
@@ -148,4 +148,12 @@ This is perhaps the most difficult/potentially frustrating part of the process. 
 ```
 
 ### Deploying
-Now let's host this site for other people to see! If you have not already, create a free account on [Netlify](https://www.netlify.com/).
+Now let's host this site for other people to see! If you have not already, create a free account on [Netlify](https://www.netlify.com/). Once logged in, select `New site from Git` and click on the GitHub button. It will then show you a list of GitHub repositories. If you do not see any repositories or the one that you want to deploy then click on the "Configure the Netlify app on GitHub" link and allow the repositories to be accessed. Once a repository is selected it will take you to the next page.
+
+Under Build command type `npm run docs:build` and under Publish directory type `.vuepress/dist`.
+
+<img src="/14.png" alt="View of how the Netlify page should look with all the values filled in.">
+
+Press the Deploy Site button and Netlify will build your project and then publish the site. The URL will probably be something crazy but it can be altered under the site settings! Congrats, your page is now set up!
+
+The possibilities are quite vast, do not think you are limited to just two pages. To learn more about what you can do with VuePress, I recommend reading through their [site guide](https://vuepress.vuejs.org/guide). 

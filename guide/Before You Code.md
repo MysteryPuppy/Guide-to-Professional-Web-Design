@@ -89,6 +89,13 @@ To switch back to the master branch you can `git checkout master` to return. Jus
 ### Pull Requests & Merging
 Once you are satisfied with your branch and think it is ready to join the final product, open a `Pull Request`. This says that you are ready for your code to be reviewed and if it is up-to-par it will then be added to the `master` branch. To open a Pull Request, go to your GitHub repository page, click on the `Pull Requests` tab at the top and click on the green `New Pull Request` button. Then the person who is in charge of the repository can choose to merge the offshoot branch with the `master` branch.
 
+### Adding a Local Existing Project to GitHub
+Sometimes we start work on a project and then want to make a GitHub repository. It can get a bit messy to make a new repository, clone it to the machine, and then copy the code into that new cloned directory. There is a way to combat this!
+
+First, create a new repository on GitHub like usual. However, it is best to not initialize the repository with a README.md file or any other preset files. On your machine go to the root directory of your project and type `git init` to initialize the project and tell Git that this is a Git repository.
+
+Now we can `git add .` and `git commit -m "Adding project files"` like usual. The pushing is where things get a bit different. We type `git remote add origin https://github.com/MysteryPuppy/Test-Site.git` but replace my GitHub repository URL with your own. Now we simply type `git remote -v` and then `git push -u origin master` which will push your changes to the GitHub repository. 
+
 ### Tips
 * Some files should not be uploaded to GitHub like `.bashrc`, `iml`, and `.zshrc`. You can put these in your .gitignore file (or make one if you do not have one in your project directory) so that they do not get uploaded.
 * It is customary to commit changes on your project every time an important contribution is made. It is suggested to commit a couple times an hour when you are actively working on the project.
