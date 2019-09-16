@@ -154,6 +154,6 @@ Under Build command type `npm run docs:build` and under Publish directory type `
 
 <img src="/14.png" alt="View of how the Netlify page should look with all the values filled in.">
 
-Press the Deploy Site button and Netlify will build your project and then publish the site. The URL will probably be something crazy but it can be altered under the site settings! Congrats, your page is now set up!
+Press the Deploy Site button and Netlify will build your project and then publish the site. The URL will probably be something crazy but it can be altered under the site settings! Congrats, your page is now set up! This does not mean that you cannot keep working on the site however. Git add, commit, and push and Netlify will deploy the site automatically. How handy is that?
 
-The possibilities are quite vast, do not think you are limited to just two pages. To learn more about what you can do with VuePress, I recommend reading through their [site guide](https://vuepress.vuejs.org/guide). 
+This is the end of our quick VuePress guide but remember that VuePress can do a lot more than what I have shown you. To learn more about what you can do with VuePress, I recommend reading through their [site guide](https://vuepress.vuejs.org/guide).
