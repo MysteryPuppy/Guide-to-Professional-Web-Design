@@ -13,6 +13,7 @@ module.exports = {
                 '',
                 'Before You Code',
                 'Styling Conventions & Coding',
+                'Practice1',
                 'Afterword'
             ]
         }
