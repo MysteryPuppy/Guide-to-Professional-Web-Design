@@ -64,6 +64,10 @@ Now that we have added some files and changed the contents of others, let us pus
 
 If all worked correctly, you will now be able to see the new files if you go to your GitHub repository page. Great! Now go forth and use GitHub in your future projects.
 
+::: warning
+**Never** `git add`, `git commit`, or `git push` "sensitive" information such as passwords, pin numbers, or personal user information to a remote directory.
+:::
+
 ### Pulling
 So now you know the basics of how to use GitHub when working on a project alone but what changes when you are working with other people? There is one big rule to follow: **Always `git pull` before working on a file that more than one person are working on.** This command retrieves changed files from the repository and downloads them to your desktop. This way you do not accidentally start coding on an old version of the code and overwrite your teammate's work. Be sure to tell your teammate if you changed a file so that they know to `git pull` if you do not usually change files that they work on.
 
