@@ -15,11 +15,11 @@ Now that VuePress is installed we can start making our website.
 
 Move to your Desktop in your terminal and create a new folder called `TestSite`. You can create a new folder from the terminal by typing `mkdir TestSite`. Now if you `ls` the folder will be on the Desktop. Move into the folder `cd TestSite` and type `touch README.md` to create a Markdown file.
 
-Drag the `README.md` file to your text editor and insert some content into it. For example:
+Drag the `README.md` file into your text editor and insert some content into it. For example:
 
 ```Markdown
 # This is my documentation site
-It's pretty *neat* huh? :star:
+It's pretty *neat* huh? :star:s
 Well that's just thanks to [Google](google.com) searches.
 ```
 
@@ -98,13 +98,13 @@ Now you should be able to navigate the pages you created! Whenever a new Markdow
 
 ## Deploying to Netlify
 ### GitHub
-Netlify actually deploys from GitHub so we should push our code to GitHub. Try to make a new repository yourself like how we learned in the first section of this guide and add, commit, and push your code to the repository. It is a little tricky since we already made the code and now we want to add existing code to a new repository.
+Netlify actually deploys from GitHub so we need to push our code to GitHub. Try to make a new repository yourself like how we learned in the first section of this guide and add, commit, and push your code to the repository. It is a little tricky since we already made the code and now we want to add the existing code to a new repository.
 
 ::: tip
 Do not initialize your repository with a README.md file since we already made a README.md file.
 :::
 
-Brief walkthrough of how to push code to GitHub:
+Brief walkthrough of how to push the code to GitHub:
 1. Make a new repository on GitHub without a README.md file
 2. Type `git init` in your project directory
 3. Type `git add .`
@@ -116,7 +116,7 @@ Brief walkthrough of how to push code to GitHub:
 Great! Now the code is on GitHub. Note that you do not need to type `git init` or `git remote add origin https://github.com/MysteryPuppy/Test-Site.git` every time.
 
 ### Package.json
-This is perhaps the most difficult/potentially frustrating part of the process. We must create a file called `package.json` in the root of our project. Copy & paste the below content into your file and alter the GitHub links to your own repository.
+This is perhaps the most difficult/potentially frustrating part of the process but hopefully it is not for you since you can just use the file I made. We must create a file called `package.json` in the root of our project. Copy & paste the below content into your file and alter the GitHub links to your own repository.
 
 ```Json
 {
@@ -154,6 +154,6 @@ Under Build command type `npm run docs:build` and under Publish directory type `
 
 <img src="/14.png" alt="View of how the Netlify page should look with all the values filled in.">
 
-Press the Deploy Site button and Netlify will build your project and then publish the site. The URL will probably be something crazy but it can be altered under the site settings! Congrats, your page is now set up! This does not mean that you cannot keep working on the site however. Git add, commit, and push and Netlify will deploy the site automatically. How handy is that?
+Press the "Deploy Site" button and Netlify will build your project and then publish the site. The URL will probably be something crazy but it can be altered under the site settings! Congrats, your page is now set up! This does not mean that you cannot keep working on the site however. Git add, commit, and push and Netlify will deploy the site automatically. How handy is that?
 
 This is the end of our quick VuePress guide but remember that VuePress can do a lot more than what I have shown you. To learn more about what you can do with VuePress, I recommend reading through their [site guide](https://vuepress.vuejs.org/guide).
